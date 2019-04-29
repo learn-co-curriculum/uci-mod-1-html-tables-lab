@@ -1,9 +1,14 @@
 # HTML Tables
 
-## Problem Statement
+## Learning Goals
+
+- Identify HTML table elements
+- Create HTML table
+
+## Introduction
 
 In HTML, we can create lists of related content using unordered and ordered
-lists, and they will display line by line in the order we put them in.
+lists and they will display line by line in the order we put them in.
 Sometimes as web developers, though, we need to display more complex data. For
 instance, imagine you are working with a financial company and need to display
 a collection of transactions, each with a title, value, time, and category.
@@ -13,17 +18,12 @@ the owner of the account, and the number of followers. For sets of data like
 this, with many separate components, the best way to display would be to put
 the data into a _table_.
 
-HTML has a built in way to display tables! In this lesson, we will be reviewing
+HTML has a built-in way to display tables! In this lesson, we will be reviewing
 how tables work and how to make our own.
 
-## Objectives
+## Identify HTML Table Elements
 
-1. Learn the basics of HTML table elements
-2. Practice table creation from scratch
-
-## Learn The Basics Of HTML Table Elements
-
-### Introduce the Table Tag: `<table>`
+### The Table Tag: `<table>`
 
 The first thing we need in order to create a table is to write opening and
 closing `<table>` tags.
@@ -41,7 +41,7 @@ create individual cells, as well as headers to label what each column is for.
 In HTML, we define these table components using individual elements that we nest
 inside our `table` tags.
 
-### Introduce the Table Row Tag: `<tr>`
+### The Table Row Tag: `<tr>`
 
 It's important to note: order really matters when building a table in HTML!
 We're trying to display a two-dimensional table, but browsers interpret HTML _line
@@ -66,7 +66,7 @@ headers, setting up the rows it would look like this:
 
 Any content we want in a row would go inside that particular `<tr>`.
 
-### Introduce the Table Header Tag: `<th>`
+### The Table Header Tag: `<th>`
 
 Tables generally start with a row of headers to label each column, so the first
 `tr` tag we write will be dedicated to these headers.
@@ -91,17 +91,17 @@ These headers need to go in the first row, so that may look something like:
 </table>
 ```
 
-Even though we write the HTML from top down, we would see these headers in bold
+Even though we write the HTML from the top down, we would see these headers in bold
 and lined up _left to right_. We can spin up `httpserver` or directly open
 `index.html` right now to take a look.
 
 This first row is almost always the only place where we use the `th` tag.
 
-### Introduce the Table Data Tag: `<td>`
+### The Table Data Tag: `<td>`
 
 In the second row, we can start putting in our data. Here, we want to use the
 _table data_ tag, `<td>` instead of using the _table header_ tag. The `<td>` tag
-representes one table cell. So, for our party table, we can add in some names,
+represents one table cell. So, for our party table, we can add in some names,
 phone numbers and items for guests to bring. An example row would look like the
 following:
 
@@ -144,18 +144,17 @@ entire table would look like the following:
 </table>
 ```
 
-Paste this into `index.html` and take a look at how it is displayed in
-browser. You'll see we've got a table with 4 rows and 3 columns! Each "column"
+Paste this into `index.html` and take a look at how it is displayed in the browser. You'll see we've got a table with 4 rows and 3 columns! Each "column"
 of content expands to fit the width of the content.
 
-### Reinforce Our Understanding Of HTML Tables Through Creation
+### Create HTML Table
 
 Okay, now its time to put what we've learned to the test. For this challenge,
 your task is to recreate a table using the following data:
 
 ![cities by population](https://s3.amazonaws.com/ironboard-learn/us_cities_by_population.png)
 
-The above table shows total population of the 4 biggest cities in the US. We can
+The above table shows the total population of the 4 biggest cities in the US. We can
 see there are 3 headers, "City", "State", and "2017 estimate", and data for each
 of the four cities.
 
@@ -174,9 +173,5 @@ exact population numbers, so feel free to copy them from the errors!
 So, with `table`, `tr`, `th` and `td`, we are able to turn line by line HTML
 into a table with rows and columns! It may seem counterintuitive at first to list
 out row content separately, but with this, you can represent all sorts of data!
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/html-tables'
-title='HTML Tables'>HTML Tables</a> on Learn.co and start learning to code for
-free.</p>
 
 [mpia]: https://en.wikipedia.org/wiki/List_of_most-followed_Instagram_accounts
